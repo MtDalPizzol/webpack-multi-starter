@@ -53,12 +53,12 @@ var config = {
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       names: ['desktop/common', 'desktop/vendor'],
-      chunks: ['desktop/index', 'desktop/post'],
+      chunks: ['desktop/common', 'desktop/index', 'desktop/post'],
       minChunks: 2
     }),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['mobile/common', 'mobile/vendor'],
-      chunks: ['mobile/index'],
+      chunks: ['mobile/common', 'mobile/index'],
       minChunks: 2
     })
   ]
